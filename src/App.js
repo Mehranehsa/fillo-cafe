@@ -24,8 +24,8 @@ const App = () => {
 
 
         <div >
-            {item &&
-                (<div className="flex flex-row pl-20">
+            {item ?
+                (<div className="flex flex-row ">
                     <div className="flex w-1/3 flex-col ">
                         <div className="h-5/6 flex items-start  justify-start flex-col py-10">
 
@@ -44,7 +44,7 @@ const App = () => {
 
 
                     <div className="flex flex-col items-center justify-center w-2/3" >
-                        <img src="/image/R.png" alt="My Image" style={{ width: '50%', height: 'auto' }} className="  bg-Mycolors-color-two
+                        <img src="/image/R.png" alt="My Image" style={{ width: '53%', height: 'auto' }} className="  bg-Mycolors-color-two
                         rounded-lg shadow-inner shadow-Mycolors-mybrown p-16  m-4" />
                         <div className="flex flex-row items-center justify-center ">
                             <img src="/image/R.png" alt="My Image" style={{ width: '17%', height: 'auto' }} className="bg-Mycolors-color-two rounded-lg shadow-inner shadow-Mycolors-mybrown  m-1 p-2" />
@@ -53,13 +53,16 @@ const App = () => {
                         </div>
                     </div>
                 </div>
-                )}
+                )
+                : <div className="flex items-start mt-56 justify-center"> <h1 className=" text-4xl font-bold">
+                    Please Choose Your Coffee!😊☕
+                </h1></div>}
         </div>
     );
 
     const Leftside = () => (
         <div className="felx justify-center items-center w-1/4 p-10  ">
-            <header className="flex flex-row gap-2 items-center ">
+            <header className="flex flex-row gap-2 items-center">
                 <TbCoffee size={'20%'} />
                 <h1 className=" text-3xl font-bold">Fillo Cafe</h1>
             </header>
@@ -88,8 +91,8 @@ const App = () => {
                 <header className="flex h-24  flex-row justify-end items-center w-full ">
                     <h1 className="text-Mycolors-color-one pr-72">Order Now!</h1>
                     <AiOutlineShoppingCart style={{ width: '4%', height: 'auto' }} />
-                    <button className=" bg-Mycolors-mybrown text-white px-10 h-8 mr-10 ml-4 rounded-3xl">
-                        Sign In
+                    <button className=" bg-Mycolors-mybrown text-white px-12 h-8 mr-10 ml-4 rounded-3xl">
+                        SignIn
                     </button>
                 </header>
                 <div className="flex flex-row ">
@@ -119,7 +122,7 @@ const App = () => {
 
 
     return (
-        <div className="flex flex-row h-screen w-screen bg-gray-300 ">
+        <div className="flex flex-row h-screen w-screen ">
             <Leftside />
             <Rightside />
 

@@ -14,10 +14,10 @@ const OrderButton = () => {
     return (
 
         <div className="flex flex-row items-center justify-evenly text-myblack px-2  bg-Mycolors-color-one shadow-inner shadow-black rounded-3xl h-10 w-32 ">
-            <button className=" text-white hover:text-black"
+            <button className=" hover:mywhite"
                 onClick={handleDecrease}>-</button>
             <h1>{ordered}</h1>
-            <button className="text-white hover:text-black "
+            <button className=" hover:text-white "
                 onClick={handleIcrese}>+</button>
         </div>
     )

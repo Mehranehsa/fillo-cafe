@@ -25,7 +25,7 @@ const App = () => {
 
         <div >
             {item &&
-                (<div className="flex flex-row ">
+                (<div className="flex flex-row pl-20">
                     <div className="flex w-1/3 flex-col ">
                         <div className="h-5/6 flex items-start  justify-start flex-col py-10">
 
@@ -33,7 +33,7 @@ const App = () => {
                             <h3 className="text-2xl font-semibold text-myblack pb-16">{item.price}</h3>
                             <h3 className="text-2xl font-semibold text-myblack pb-10" >Ingredients</h3>
                             <h3 className="text-xl font-medium text-myblack pb-10 w-44">{item.ingredients}</h3>
-                            
+
                         </div>
                         <div className="flex h-1/6 justify-end">
                             <OrderButton />
@@ -59,7 +59,7 @@ const App = () => {
 
     const Leftside = () => (
         <div className="felx justify-center items-center w-1/4 p-10  ">
-            <header className="flex flex-row gap-2 items-center">
+            <header className="flex flex-row gap-2 items-center ">
                 <TbCoffee size={'20%'} />
                 <h1 className=" text-3xl font-bold">Fillo Cafe</h1>
             </header>
@@ -88,8 +88,8 @@ const App = () => {
                 <header className="flex h-24  flex-row justify-end items-center w-full ">
                     <h1 className="text-Mycolors-color-one pr-72">Order Now!</h1>
                     <AiOutlineShoppingCart style={{ width: '4%', height: 'auto' }} />
-                    <button className=" bg-Mycolors-mybrown text-white px-12 h-8 mr-10 ml-4 rounded-3xl">
-                        SignIn
+                    <button className=" bg-Mycolors-mybrown text-white px-10 h-8 mr-10 ml-4 rounded-3xl">
+                        Sign In
                     </button>
                 </header>
                 <div className="flex flex-row ">
@@ -107,10 +107,10 @@ const App = () => {
             </div>
             <footer>
                 <h2 className="text-Mycolors-color-one  border-b-2 border-gray-800 ">
-Details
+                    Details
                 </h2>
                 <h3>
-                coffee is a beverage brewed from the roasted and ground seeds of the tropical evergreen coffee plants of African origin. 
+                    coffee is a beverage brewed from the roasted and ground seeds of the tropical evergreen coffee plants of African origin.
                 </h3>
             </footer>
         </div>
@@ -119,7 +119,7 @@ Details
 
 
     return (
-        <div className="flex flex-row h-screen w-screen ">
+        <div className="flex flex-row h-screen w-screen bg-gray-300 ">
             <Leftside />
             <Rightside />
 

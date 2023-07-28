@@ -40,9 +40,6 @@ const App = () => {
 
                         </div>
                     </div>
-
-
-
                     <div className="flex flex-col items-center justify-center w-2/3" >
                         <img src="/image/R.png" alt="My Image" style={{ width: '53%', height: 'auto' }} className="  bg-Mycolors-color-two
                         rounded-lg shadow-inner shadow-Mycolors-mybrown p-16  m-4" />

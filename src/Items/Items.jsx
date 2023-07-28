@@ -7,7 +7,7 @@ const Items = (props) => {
 
         <div className=" h-60 w-60 bg-Mycolors-color-one focus:bg-Mycolors-color-two rounded-3xl flex flex-col  my-3 p-1 text-white "
             onClick={() => {
-                props.onClick({ coffeName,ingredients,price,picture });
+                props.onClick({ coffeName,ingredients,price });
             }}>
             <div className="flex flex-row justify-between">
 

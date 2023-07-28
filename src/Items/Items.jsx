@@ -5,14 +5,14 @@ const Items = (props) => {
 
     return (
 
-        <div className=" h-60 w-60 bg-Mycolors-color-one focus:bg-Mycolors-color-two rounded-3xl flex flex-col  my-3 p-1 text-white "
+        <div className=" h-60 w-60 bg-Mycolors-color-one focus:bg-Mycolors-color-two rounded-3xl flex flex-col  my-3 p-1 text-white shadow-md shadow-black "
             onClick={() => {
                 props.onClick({ coffeName,ingredients,price });
             }}>
             <div className="flex flex-row justify-between">
 
-                <h4 className=" text-3xl font-bold pl-6">{coffeName}</h4>
-                <img src="/image/R.png" alt="My Image" style={{ width: '30%', height: 'auto' }} />
+                <h4 className=" text-3xl font-bold pl-6 pt-16">{coffeName}</h4>
+                <img src="/image/R.png" alt="My Image" style={{ width: '30%', height: '70%' }} />
             </div>
             
                 <h5 className=" text-sm font-medium  pl-5 h-24 w-30 mt-4">{ingredients}</h5>
